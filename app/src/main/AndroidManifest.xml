@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.4QulOfQuran">
+        <activity android:name=".SurahIkhlas"></activity>
+        <activity android:name=".SurahNas" />
+        <activity android:name=".SurahFalak" />
+        <activity android:name=".SurahKafiron" />
+        <activity android:name=".Dashboard" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
