@@ -12,6 +12,7 @@ public class Dashboard extends AppCompatActivity {
     Button surahIkhlasButton;
     Button surahFalakButton;
     Button surahNasButton;
+    Button surahKafironDashboardButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +26,7 @@ public class Dashboard extends AppCompatActivity {
         surahKafironButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), SurahKafiron.class));
+                startActivity(new Intent(getApplicationContext(), SurahKafironDashboard.class));
             }
         });
         surahIkhlasButton.setOnClickListener(new View.OnClickListener() {
@@ -37,13 +38,13 @@ public class Dashboard extends AppCompatActivity {
         surahFalakButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), SurahFalak.class));
+                startActivity(new Intent(getApplicationContext(), SurahFalakDashboard.class));
             }
         });
         surahNasButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), SurahNas.class));
+                startActivity(new Intent(getApplicationContext(), SurahNasDashboard.class));
             }
         });
 

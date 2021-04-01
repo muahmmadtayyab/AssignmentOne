@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.4QulOfQuran">
-        <activity android:name=".SurahIkhlas"></activity>
+        <activity android:name=".SurahNasAudio"></activity>
+        <activity android:name=".SurahNasDashboard" />
+        <activity android:name=".SurahFalakAudio" />
+        <activity android:name=".SurahFalakDashboard" />
+        <activity android:name=".SurahKafironAudio" />
+        <activity android:name=".SurahKafironDashboard" />
+        <activity android:name=".SurahIkhlas" />
         <activity android:name=".SurahNas" />
         <activity android:name=".SurahFalak" />
         <activity android:name=".SurahKafiron" />
