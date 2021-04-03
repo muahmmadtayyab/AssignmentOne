@@ -7,36 +7,36 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class SurahNasDashboard extends AppCompatActivity {
+public class SurahIkhlasDashboard extends AppCompatActivity {
     Button readButton;
     Button audioButton;
     Button videoButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_surah_nas_dashboard);
-        getSupportActionBar().setTitle("Surah Al-Nas");
-        readButton=findViewById(R.id.surahNasReadButton);
-        audioButton=findViewById(R.id.surahNasAudioButton);
-        videoButton=findViewById(R.id.surahNasVideoButton);
+        setContentView(R.layout.activity_surah_ikhlas_dashboard);
+        getSupportActionBar().setTitle("Surah Al-Ikhlas");
+        readButton=findViewById(R.id.surahIkhlasReadButton);
+        audioButton=findViewById(R.id.surahIkhlasAudioButton);
+        videoButton=findViewById(R.id.surahIkhlasVideoButton);
 
         readButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), SurahNas.class));
+                startActivity(new Intent(getApplicationContext(), SurahIkhlas.class));
             }
         });
         audioButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), SurahNasAudio.class));
+                startActivity(new Intent(getApplicationContext(), SurahIkhlasAudio.class));
             }
         });
         videoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),VideoActivity.class);
-                intent.putExtra("surahName","surahnasvideo");
+                intent.putExtra("surahName","surahikhlasvideo");
                 startActivity(intent);
             }
         });

@@ -18,7 +18,7 @@ public class SurahFalakDashboard extends AppCompatActivity {
         getSupportActionBar().setTitle("Surah Al-Falak");
         readButton=findViewById(R.id.surahFalakReadButton);
         audioButton=findViewById(R.id.surahFalakAudioButton);
-        //videoButton=findViewById(R.id.surahFalakVideoButton);
+        videoButton=findViewById(R.id.surahFalakVideoButton);
 
         readButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,6 +30,14 @@ public class SurahFalakDashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), SurahFalakAudio.class));
+            }
+        });
+        videoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),VideoActivity.class);
+                intent.putExtra("surahName","surahfalaqvideo");
+                startActivity(intent);
             }
         });
     }

@@ -32,7 +32,7 @@ public class Dashboard extends AppCompatActivity {
         surahIkhlasButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),SurahIkhlas.class));
+                startActivity(new Intent(getApplicationContext(),SurahIkhlasDashboard.class));
             }
         });
         surahFalakButton.setOnClickListener(new View.OnClickListener() {

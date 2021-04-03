@@ -19,7 +19,7 @@ public class SurahKafironDashboard extends AppCompatActivity {
         getSupportActionBar().setTitle("Surah Al-Kafiron");
         readButton=findViewById(R.id.surahKafironReadButton);
         audioButton=findViewById(R.id.surahKafironAudioButton);
-        //videoButton=findViewById(R.id.surahKafironVideoButton);
+        videoButton=findViewById(R.id.surahKafironVideoButton);
 
         readButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +31,14 @@ public class SurahKafironDashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), SurahKafironAudio.class));
+            }
+        });
+        videoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),VideoActivity.class);
+                intent.putExtra("surahName","surahkafiroonvideo");
+                startActivity(intent);
             }
         });
     }
