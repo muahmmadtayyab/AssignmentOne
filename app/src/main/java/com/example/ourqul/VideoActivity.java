@@ -8,6 +8,7 @@ import android.widget.VideoView;
 
 public class VideoActivity extends AppCompatActivity {
     VideoView videoView;
+    int currentPosition;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,4 +40,6 @@ public class VideoActivity extends AppCompatActivity {
         videoView.setMediaController(mediaController);
         videoView.start();
     }
+
+
 }

@@ -9,21 +9,47 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.4QulOfQuran">
-        <activity android:name=".SurahIkhlasAudio"></activity>
-        <activity android:name=".SurahIkhlasDashboard" />
-        <activity android:name=".VideoActivity" />
-        <activity android:name=".SurahNasAudio" />
-        <activity android:name=".SurahNasDashboard" />
-        <activity android:name=".SurahFalakAudio" />
-        <activity android:name=".SurahFalakDashboard" />
-        <activity android:name=".SurahKafironAudio" />
-        <activity android:name=".SurahKafironDashboard" />
-        <activity android:name=".SurahIkhlas" />
-        <activity android:name=".SurahNas" />
-        <activity android:name=".SurahFalak" />
-        <activity android:name=".SurahKafiron" />
-        <activity android:name=".Dashboard" />
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".SurahIkhlasAudio"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".SurahIkhlasDashboard"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".VideoActivity"
+            android:configChanges="orientation|screenSize" />
+
+        <activity android:name=".SurahNasAudio"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".SurahNasDashboard"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".SurahFalakAudio"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".SurahFalakDashboard"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".SurahKafironAudio"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".SurahKafironDashboard"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SurahIkhlas"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SurahNas"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SurahFalak"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SurahKafiron"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Dashboard"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
